@@ -1,0 +1,844 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+
+        .container1 {
+            width: 100%;
+            height: 100vh;
+            //border: 1px solid green;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            position: relative;
+        }
+
+        .container2 {
+            width: 100%;
+            height: 100vh;
+            //border: 1px solid green;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            position: relative;
+        }
+
+        .container3 {
+            width: 100%;
+            height: 100vh;
+            //border: 1px solid green;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            position: relative;
+        }
+
+        .container4 {
+            width: 100%;
+            height: 100vh;
+            //border: 1px solid green;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            position: relative;
+        }
+
+
+
+
+        .leftpane {
+            width: 5%;
+            height: 100vh;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            border: 1px solid red;
+        }
+
+        .firstpane {
+            width: 95%;
+            height: 100vh;
+            //border: 1px solid blue;
+            position: relative;
+            top: 0px;
+            left: 5%;
+            background-color: rgba(237, 45, 52, 0.2);
+        }
+
+            .firstpane .bgImage {
+                width: 250px;
+                height: 250px;
+                //border:1px solid black;
+                position: absolute;
+                top: 100px;
+                left: 100px;
+                z-index: -1;
+            }
+
+
+
+
+            .firstpane .bgImage2 {
+                width: 250px;
+                height: 250px;
+                //border:1px solid black;
+                position: absolute;
+                top: 400px;
+                left: 500px;
+                z-index: -1;
+            }
+
+            .firstpane .bgImage3 {
+                width: 250px;
+                height: 250px;
+                //border:1px solid black;
+                position: absolute;
+                top: 100px;
+                left: 700px;
+                z-index: -1;
+            }
+
+            .firstpane .bgImage4 {
+                width: 250px;
+                height: 250px;
+                //border:1px solid black;
+                position: absolute;
+                top: 400px;
+                left: 1000px;
+                z-index: -1;
+            }
+
+            .firstpane .bgImage img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .firstpane .bgImage2 img {
+                width: 100%;
+                height: 100%;
+            }
+
+
+            .firstpane .bgImage3 img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .firstpane .bgImage4 img {
+                width: 100%;
+                height: 100%;
+            }
+
+
+
+
+        .secondpane {
+            width: 95%;
+            height: 100vh;
+            // border: 1px solid blue;
+            position: relative;
+            top: 0px;
+            left: 5%;
+            //background-color: rgba(237, 45, 52, 0.2);
+        }
+
+        .thirdpane {
+            width: 95%;
+            height: 100vh;
+            //border: 1px solid blue;
+            position: absolute;
+            top: 0px;
+            left: 5%;
+        }
+
+
+
+        .fourthpane {
+            width: 95%;
+            height: 100vh;
+            //border: 1px solid blue;
+            position: absolute;
+            top: 0px;
+            left: 5%;
+        }
+
+        .fourthpane-header {
+            width: 100%;
+            height: 50px;
+            text-align: left;
+            margin-top: 100px;
+            margin-left: 140px;
+        }
+
+            .fourthpane-header h2 {
+                font-size: 45px;
+                margin-bottom: 10px;
+            }
+
+            .fourthpane-header .q {
+                color: crimson;
+            }
+
+        .fourthpane-content {
+            height: 80%;
+            width: 80%;
+            margin: 0px auto;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .fourthpane-content-left, .fourthpane-content-right {
+            //width: 50%;
+            height: 65%;
+            //border: 1px solid black;
+            margin-top: 50px;
+        }
+
+
+
+        .fourthpane-content-left {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 60%;
+        }
+
+        .fourthpane-content-right {
+            width: 40%;
+        }
+
+
+
+
+
+        .thirdpane-content {
+            width: 100%;
+            height: 100px;
+            text-align: center;
+            margin-top: 50px;
+            //border:1px solid black;
+        }
+
+            .thirdpane-content h2 {
+                color: crimson;
+                font-size: 45px;
+            }
+
+            .thirdpane-content span {
+                display: block;
+                margin-bottom: 10px;
+                font-size: 22px;
+            }
+
+
+
+        .leftpane {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(237, 45, 52);
+            color: white;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .aa, .bb, .cc, .dd {
+            height: 20px;
+            width: 20px;
+            border: 1px solid white;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .change {
+            background-color: white;
+        }
+
+        .hamburger {
+        }
+
+        .leftpane .hamburger p {
+            cursor: pointer;
+            font-size: 30px;
+            font-weight: 900;
+            margin-top: 30px;
+        }
+
+        .leftpane .logo {
+            margin-bottom: 30px;
+            font-size: 30px;
+        }
+
+        .first-pane-wrapper {
+            //border:1px solid black;
+            width: 80%;
+            margin: 100px auto;
+            height: 80%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .first-pane-content, .first-pane-image {
+            width: 50%;
+            height: 100%;
+        }
+
+        .first-pane-content {
+            //border:1px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin-left: 30px;
+        }
+
+            .first-pane-content h2 {
+                font-size: 45px;
+                margin-bottom: 30px;
+                color: crimson;
+            }
+
+            .first-pane-content p {
+                font-size: 22px;
+                margin-bottom: 30px;
+                line-height: 35px;
+            }
+
+        .first-pane-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.4s;
+        }
+
+            .first-pane-image img:hover {
+                transform: translateY(-30px);
+            }
+
+
+        .viewmorebtn {
+            text-decoration: none;
+            border: 1px solid black;
+            padding: 10px 20px;
+            border-radius: 20px;
+            color: black;
+            font-size: 20px;
+            font-weight: 600;
+            transition: 0.4s;
+        }
+
+            .viewmorebtn:hover {
+                background-color: crimson;
+                color: white;
+            }
+
+        /* pane 2 styling */
+
+        .second-pane-wrapper {
+            width: 80%;
+            height: 80%;
+            //border: 1px solid black;
+            margin: 20px auto;
+            flex-direction: column;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+        }
+
+        .second-pane-content, .second-pane-slider {
+            //border: 1px solid black;
+            width: 100%;
+            height: 30%;
+        }
+
+        .second-pane-slider {
+            //border: 1px solid black;
+            width: 100%;
+            height: 70%;
+            margin-top: 20px;
+        }
+
+        .thirdpane-slider {
+            width: 80%;
+            height: 80%;
+            margin: 50px auto;
+            //border:2px solid red;
+        }
+
+            .thirdpane-slider img {
+                width: 50px;
+                height: 200px;
+                border-radius: 5%;
+                object-fit: cover;
+            }
+
+
+
+
+        .second-pane-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .second-pane-stats {
+            display: flex;
+            //border: 1px solid black;
+            width: 450px;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+        }
+
+        .owl-carousel {
+            margin: 50px auto;
+            //border:1px solid black;
+            overflow: hidden;
+        }
+
+        .shoecontent {
+            text-align: center;
+            margin: 20px 0px;
+        }
+
+            .shoecontent p {
+                margin-top: 10px;
+            }
+
+        .second-pane-header h2 {
+            font-size: 40px;
+            color: crimson;
+        }
+
+        .second-pane-stats .number {
+            font-size: 30px;
+            font-weight: 900;
+        }
+
+        .second-pane-stats .stat {
+            font-weight: 100;
+            margin-top: 10px;
+        }
+
+
+
+
+
+
+
+        /* pane 2 styling over */
+
+
+        /*pane 3*/
+
+        .shoe .testimonialImage {
+            width: 100px;
+            height: 100px;
+        }
+
+        /* pane 3 over*/
+
+
+        .fcl1 h2 {
+            margin-bottom: 20px;
+            font-weight: 100;
+            font-size: 32px;
+        }
+
+        .fcl1 p {
+            font-size: 18px;
+            font-weight: 100;
+        }
+
+        .fcl2 {
+            //border:1px solid black;
+            margin-top: 30px;
+            margin-left: 10px;
+        }
+
+        .fca, .fcb, .fcc {
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+            .fca span, .fcb span, .fcc span {
+                padding-left: 30px;
+            }
+
+        .marker, .phone, .envelope {
+            font-size: 32px;
+        }
+
+
+        .fourthpane-content-right form {
+            //border:1px solid black;
+            margin-left: 20px;
+        }
+
+        .fourthpane-content-right input {
+            width: 90%;
+            margin: 15px auto;
+            font-size: 16px;
+            border-top: 0px;
+            border-right: 0px;
+            border-left: 0px;
+            border-bottom: 1px solid black;
+            outline: none;
+        }
+
+        .fourthpane-content-right textarea {
+            width: 90%;
+            margin: 15px auto;
+            font-size: 16px;
+            border-top: 0px;
+            border-right: 0px;
+            border-left: 0px;
+            border-bottom: 1px solid black;
+            outline: none;
+        }
+
+        .btn {
+            margin-top: 10px;
+            width: 90%;
+            margin: 15px auto;
+            font-size: 16px;
+            padding: 10px 0px;
+            border-radius: 20px;
+            border: 2px solid crimson;
+            color: crimson;
+            background-color: white;
+            transition: 0.4s;
+        }
+
+            .btn:hover {
+                background-color: crimson;
+                color: white;
+            }
+
+
+
+        .xx {
+            text-align: center;
+            //border:1px solid dodgerblue;
+            padding: 10px 0px
+        }
+
+        .xx {
+            margin: 20px 0px;
+        }
+
+            .xx p {
+                font-size: 18px;
+                margin: 10px 0px;
+            }
+
+
+        .xxx {
+            //border:10px solid black;
+            width: 100%;
+            height: 100%;
+        }
+
+            .xxx img {
+                width: 100%;
+                height: 100%;
+                border-radius: 0%;
+            }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="leftpane">
+            <div class="hamburger"><p>☰</p></div>
+            <div class="links">
+                <a href="#a" class="aa"></a>
+                <a href="#b" class="bb"></a>
+                <a href="#c" class="cc"></a>
+                <a href="#d" class="dd"></a>
+            </div>
+            <div class="logo">
+                <h3>M</h3>
+            </div>
+        </div>
+        <div class="firstpane" id="a">
+            <div class="bgImage">
+                <img src="dots.jpg" />
+            </div>
+            <div class="bgImage2">
+                <img src="dots.jpg" />
+            </div>
+            <div class="bgImage3">
+                <img src="dots.jpg" />
+            </div>
+            <div class="bgImage4">
+                <img src="dots.jpg" />
+            </div>
+            <div class="first-pane-wrapper">
+                <div class="first-pane-content" data-aos="fade-right" data-aos-duration="600">
+                    <h2>Premium <span>Air Max Sneakers</span></h2>
+                    <p>Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy.</p>
+                    <a href="#" class="viewmorebtn">View More</a>
+
+                </div>
+                <div class="first-pane-image" data-aos="fade-left" data-aos-duration="600">
+                    <image src="s1.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container2">
+
+        <div class="secondpane">
+            <div class="second-pane-wrapper">
+                <div class="second-pane-content">
+                    <div class="second-pane-header" data-aos="fade-right" data-aos-duration="600">
+                        <h2>Premium Shoe Collection</h2>
+                    </div>
+                    <div class="second-pane-stats" data-aos="fade-left" data-aos-duration="600">
+                        <div class="shoes-delivered">
+                            <p class="number">306</p>
+                            <p class="stat">Shoes Delivered</p>
+                        </div>
+                        <div class="new-articles">
+                            <p class="number">376</p>
+                            <p class="stat">New Articles</p>
+                        </div>
+                        <div class="shoes-delivered">
+                            <p class="number">30</p>
+                            <p class="stat">Happy Customers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="second-pane-slider" data-aos="fade-up" data-aos-duration="900">
+                    <div class="owl-carousel owl-theme">
+                        <div class="shoe">
+                            <img src="shoe1.jpg" class="owl-lazy" data-src="./shoe1.jpg" />
+                            <div class="shoecontent">
+                                <h3>Leather Shoes</h3>
+                                <p>Made of the finest leather</p>
+                            </div>
+                        </div>
+                        <div class="shoe">
+                            <img src="shoe2.jpg" class="owl-lazy" data-src="./shoe2.jpg" />
+                            <div class="shoecontent">
+                                <h3>Rock Shoes</h3>
+                                <p>Made of the finest rock</p>
+                            </div>
+                        </div>
+
+                        <div class="shoe">
+                            <img src="shoe2.jpg" class="owl-lazy" data-src="./shoe3.jpg" />
+                            <div class="shoecontent">
+                                <h3>Brock Shoes</h3>
+                                <p>Made by brock lesnar</p>
+                            </div>
+                        </div>
+
+                        <div class="shoe">
+                            <img src="shoe2.jpg" class="owl-lazy" data-src="./shoe4.jpg" />
+                            <div class="shoecontent">
+                                <h3>Sock Shoes</h3>
+                                <p>Made by the sock man</p>
+                            </div>
+                        </div>
+
+                        <div class="shoe">
+                            <img src="shoe2.jpg" class="owl-lazy" data-src="./shoe5.jpg" />
+                            <div class="shoecontent">
+                                <h3>Woodland Shoes</h3>
+                                <p>Made by woodlands</p>
+                            </div>
+                        </div>
+
+                        <div class="shoe">
+                            <img src="shoe1.jpg" class="owl-lazy" data-src="./shoe1.jpg" />
+                            <div class="shoecontent">
+                                <h3>Leather Shoes</h3>
+                                <p>Made of the finest leather</p>
+                            </div>
+                        </div>
+                        <div class="shoe">
+                            <img src="shoe2.jpg" class="owl-lazy" data-src="./shoe2.jpg" />
+                            <div class="shoecontent">
+                                <h3>Rock Shoes</h3>
+                                <p>Made of the finest rock</p>
+                            </div>
+                        </div>
+
+                        <div class="shoe">
+                            <img src="shoe2.jpg" class="owl-lazy" data-src="./shoe3.jpg" />
+                            <div class="shoecontent">
+                                <h3>Brock Shoes</h3>
+                                <p>Made by brock lesnar</p>
+                            </div>
+                        </div>
+
+                        <div class="shoe">
+                            <img src="shoe2.jpg" class="owl-lazy" data-src="./shoe4.jpg" />
+                            <div class="shoecontent">
+                                <h3>Sock Shoes</h3>
+                                <p>Made by the sock man</p>
+                            </div>
+                        </div>
+
+                        <div class="shoe">
+                            <img src="shoe2.jpg" class="owl-lazy" data-src="./shoe5.jpg" />
+                            <div class="shoecontent">
+                                <h3>Woodland Shoes</h3>
+                                <p>Made by woodlands</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container3">
+        <div class="thirdpane" data-aos="fade-right" data-aos-duration="600">
+            <div class="thirdpane-content">
+                <span>Best in Business</span>
+                <h2>Happy Customers</h2>
+            </div>
+
+            <div class="thirdpane-slider">
+
+                <div class="owl-carousel owl-theme">
+
+                    <div class="xxx">
+                        <img src="1.jpg" class="owl-lazy" data-src="./1.jpg" />
+                        <div class="xx">
+                            <h3>People Pleaser</h3>
+                            <p>"Wonderful service, these people rock! Wonderful service, these people rock!"</p>
+                            <span style="font-size:32px; color:crimson;"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="xxx">
+                        <img src="2.jpg" class="owl-lazy" data-src="./2.jpg" />
+                        <div class="xx">
+                            <h3>Roney Singh</h3>
+                            <p>"Wonderful service, these people rock! Wonderful service, these people rock!"</p>
+                            <span style="font-size:32px; color:crimson;"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="xxx">
+                        <img src="3.jpg" class="owl-lazy" data-src="./3.jpg" />
+                        <div class="xx">
+                            <h3>Ashley Smith</h3>
+                            <p>"Wonderful service, these people rock! Wonderful service, these people rock!"</p>
+                            <span style="font-size:32px; color:crimson;"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
+                        </div>
+
+                    </div>
+
+                    <div class="xxx">
+                        <img src="4.jpg" class="owl-lazy" data-src="4.jpg" />
+                        <div class="xx">
+                            <h3>Keshav Maharaj</h3>
+                            <p>"Wonderful service, these people rock! Wonderful service, these people rock!"</p>
+                            <span style="font-size:32px; color:crimson;"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
+                        </div>
+
+                    </div>
+
+                    </div>
+
+                </div>
+        </div>
+    </div>
+
+    <div class="container4">
+        <div class="fourthpane" data-aos="fade-left" data-aos-duration="800">
+            <div class="fourthpane-header">
+                <h2 class="q">Questions?</h2>
+                <h2>Let's Get In Touch</h2>
+            </div>
+            <div class="fourthpane-content">
+                <div class="fourthpane-content-left">
+                    <div class="fcl1">
+                        <h2>Warehouse Location</h2>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered </p>
+                    </div>
+                    <div class="fcl2">
+                        <div class="fca">
+                            <i class="fa fa-map-marker marker"></i>
+                            <span>123 Park Avenue, New York, United States</span>
+                        </div>
+                        <div class="fcb">
+                            <i class="fa fa-phone phone"></i>
+                            <span>1234567890, 0987654321</span>
+                        </div>
+                        <div class="fcc">
+                            <i class="fa fa-envelope envelope"></i>
+                            <span>email@website.com</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fourthpane-content-right">
+                    <form>
+                        <input type="text" class="name" placeholder="Name" />
+                        <input type="text" class="contact" placeholder="Contact No" />
+                        <input type="text" class="email" placeholder="Email" />
+                        <textarea class="message" placeholder="Type Your Message Here" cols="55" rows="5"></textarea>
+                        <button type="submit" class="btn">SUBMIT INFORMATION</button>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+
+        AOS.init();
+
+        $('.owl-carousel').owlCarousel({
+            items: 3,
+            lazyLoad: true,
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplaySpeed: 500
+        })
+
+    </script>
+</body>
+</html>
