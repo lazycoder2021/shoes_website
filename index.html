@@ -3,6 +3,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
@@ -573,140 +574,139 @@
                 border-radius: 0%;
             }
 
-            @media only screen and (max-width:480px){
-                body{
-                    //background-color:red;
-                }
-
-                .leftpane{
-                    display:none;
-                }
-
-                .firstpane, .secondepane, .thirdpane, .fourthpane{
-                    width:100%; 
-                    left:0; 
-                }
-
-                .bgImage, .bgImage2, .bgImage3, .bgImage4{
-                    display:none; 
-                }
-
-                .first-pane-wrapper{
-                    flex-direction:column;
-                }
-
-                .first-pane-content, .first-pane-image{
-                    width:100%; 
-                }
-
-                .secondpane{
-                    margin-top:100px;
-                    //border:10px solid red;
-                }
-
-                .second-pane-content{
-                    flex-direction:column;
-                }
-
-                .second-pane-header{
-                    margin-bottom:20px;
-                    margin-left:-5px;
-                    //border:1px solid black;
-                }
-
-                .second-pane-header h2, .thirdpane-content h2{
-                    font-size:30px;
-                }
-
-                .second-pane-stats{
-                    margin-top:20px;
-                    border:1px solid white;
-                    width:420px;
-                }
-
-                .thirdpane{
-                    margin-top:-200px;
-                }
-
-                .owl-carousel{
-                    width:480px;
-                    overflow:hidden;
-                    margin-left:-50px;
-                }
-
-                
-
-                .xxx{
-                    width:100%; 
-                    height:420px;
-                    //border:1px solid black;
-                }
-
-                .xxx img{
-                    width:100%;
-                    height:50%;
-                    object-fit:cover;
-                }
-
-                .xx{
-                    width:100%; 
-                }
-
-                .xx p{
-                    font-size:14px;
-                }
-
-                .fa-star{
-                    font-size:24px;
-                }
-
-                .fourthpane{
-                    margin-top:-350px;
-                    //width:500px;
-                }
-
-                .fourthpane-header{
-                    //text-align:center;
-                    width:100%;
-                    margin-bottom:10px;
-                }
-
-                .fourthpane-header h2{
-                    margin-left:-50px;
-                }
-
-                .fourthpane-header .q, .fourthpane-header h2{
-                    font-size:30px;
-                }
-
-                    .fourthpane-header .q{
-                        margin-left:0px;
-                    }
-                
-                    .fourthpane-content{
-                        flex-direction:column; 
-                        align-items:flex-start;
-                        height:auto;
-                        //border:1px solid red;
-                    }
-
-                    .fourthpane-content-left, .fourthpane-content-right{
-                        width:100%; 
-                    }
-
-                    .fcl1 h2, .fcl1 p{
-                        text-align:left;
-                    }
-
-                    .fcl1 h2{
-                        font-size:25px;
-                    }
-
-                    .fca span, .fcb span, .fcc span{
-                        font-size:16px;
-                    }
-
+        @media only screen and (max-width:480px) {
+            body {
+                //background-color:red;
             }
+
+            .leftpane {
+                display: none;
+            }
+
+            .firstpane, .secondepane, .thirdpane, .fourthpane {
+                width: 100%;
+                left: 0;
+            }
+
+            .bgImage, .bgImage2, .bgImage3, .bgImage4 {
+                display: none;
+            }
+
+            .first-pane-wrapper {
+                flex-direction: column;
+            }
+
+            .first-pane-content, .first-pane-image {
+                width: 100%;
+            }
+
+            .secondpane {
+                margin-top: 100px;
+                //border:10px solid red;
+            }
+
+            .second-pane-content {
+                flex-direction: column;
+            }
+
+            .second-pane-header {
+                margin-bottom: 20px;
+                margin-left: -5px;
+                //border:1px solid black;
+            }
+
+                .second-pane-header h2, .thirdpane-content h2 {
+                    font-size: 30px;
+                }
+
+            .second-pane-stats {
+                margin-top: 20px;
+                border: 1px solid white;
+                width: 420px;
+            }
+
+            .thirdpane {
+                margin-top: -200px;
+            }
+
+            .owl-carousel {
+                width: 480px;
+                overflow: hidden;
+                margin-left: -50px;
+            }
+
+
+
+            .xxx {
+                width: 100%;
+                height: 420px;
+                //border:1px solid black;
+            }
+
+                .xxx img {
+                    width: 100%;
+                    height: 50%;
+                    object-fit: cover;
+                }
+
+            .xx {
+                width: 100%;
+            }
+
+                .xx p {
+                    font-size: 14px;
+                }
+
+            .fa-star {
+                font-size: 24px;
+            }
+
+            .fourthpane {
+                margin-top: -350px;
+                //width:500px;
+            }
+
+            .fourthpane-header {
+                //text-align:center;
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+                .fourthpane-header h2 {
+                    margin-left: -50px;
+                }
+
+                .fourthpane-header .q, .fourthpane-header h2 {
+                    font-size: 30px;
+                }
+
+                .fourthpane-header .q {
+                    margin-left: 0px;
+                }
+
+            .fourthpane-content {
+                flex-direction: column;
+                align-items: flex-start;
+                height: auto;
+                //border:1px solid red;
+            }
+
+            .fourthpane-content-left, .fourthpane-content-right {
+                width: 100%;
+            }
+
+            .fcl1 h2, .fcl1 p {
+                text-align: left;
+            }
+
+            .fcl1 h2 {
+                font-size: 25px;
+            }
+
+            .fca span, .fcb span, .fcc span {
+                font-size: 16px;
+            }
+        }
     </style>
 </head>
 <body>
